@@ -2,11 +2,11 @@
   "name": "todo_deploy",
   "version": "1.0.0",
   "main": "index.js",
- "scripts": {
-  "server": "nodemon api/index.js",
-  "start": "node api/index.js",
-  "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-},
+  "scripts": {
+    "server": "nodemon backend/index.js",
+    "start": "node backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/winstoncda/todo_deploy.git"
