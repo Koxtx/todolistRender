@@ -14,7 +14,7 @@ export default function AddTodo({ addTodo }) {
   async function createTodo() {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/api/todos/addTodo", {
+      const response = await fetch("https://todolistsql.onrender.com/api/todos/addTodo", {
         method: "POST",
         body: JSON.stringify({
           content: value,

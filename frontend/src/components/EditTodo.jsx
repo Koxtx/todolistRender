@@ -5,7 +5,7 @@ function EditTodo({ todo, updateTodo }) {
 
   async function editOneTodo(newTodo) {
     try {
-      const response = await fetch("http://localhost:5000/api/todos/update", {
+      const response = await fetch("https://todolistsql.onrender.com/api/todos/update", {
         method: "PATCH",
         body: JSON.stringify(newTodo),
         headers: {

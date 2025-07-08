@@ -4,7 +4,7 @@ function OneTodo({ todo, deleteTodo, updateTodo }) {
   async function updateOneTodo(newTodo) {
     console.log(newTodo);
     try {
-      const response = await fetch("http://localhost:5000/api/todos/update", {
+      const response = await fetch("https://todolistsql.onrender.com/api/todos/update", {
         method: "PATCH",
         body: JSON.stringify(newTodo),
         headers: {
@@ -24,7 +24,7 @@ function OneTodo({ todo, deleteTodo, updateTodo }) {
   async function handleDeleteTodo() {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/todos/delete/${todo._id}`,
+        `https://todolistsql.onrender.com/api/todos/delete/${todo._id}`,
         {
           method: "DELETE",
         }
